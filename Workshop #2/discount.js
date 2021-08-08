@@ -1,13 +1,13 @@
-const couponSale = ["Junior", "SemiSenior", "Senior"];
+const couponDiscount = ["Junior", "SemiSenior", "Senior"];
 
-function calculatePriceWithSale(price, coupon) {
-    const pricePercentWithSale = 100 - coupon;
-    const priceWithSale = (price * pricePercentWithSale) /100;
+function calculatePriceWithDiscount(price, coupon) {
+    const pricePercentWithDiscount = 100 - coupon;
+    const priceWithDiscount = (price * pricePercentWithDiscount) /100;
 
-    return priceWithSale;
+    return priceWithDiscount;
 }
 
-function priceSale(){
+function priceDiscount(){
     const inputP = document.getElementById("inputPrice");
     const inputC = document.getElementById("inputCoupon");
     const priceValue = inputP.value;
@@ -30,8 +30,8 @@ function priceSale(){
             alert("The name of the coupon is incorrect!");
     }
 
-    const priceWithSale = calculatePriceWithSale(priceValue, discount);
+    const priceWithDiscount = calculatePriceWithDiscount(priceValue, discount);
 
     const resultP = document.getElementById("resultPrice");
-    resultP.innerText = "The price with sale is: $" +priceWithSale;
+    resultP.innerText = "The price with discount is: $" +priceWithDiscount;
 }
