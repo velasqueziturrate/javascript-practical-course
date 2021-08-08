@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Figures | JPC</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Geometric Figures
+        </h1>
+        <p>The first workshop of the JS Practical Course</p>
+    </header>
+    <section>
+        <!-- Square -->
+        <h2>Calculate the perimeter and area of a square</h2>
+        <form>
+            <label for="inputSquare">
+                Write the long of one of your square sides
+            </label>
+            <input type="number" id="inputSquare"/>
+            <button type="button" onclick="calculateSquarePerimeter()">
+                Calculate the perimeter
+            </button>
+            <button type="button" onclick="calculateSquareArea()">
+                Calculate the area
+            </button>
+        </form>
+        <!-- Triangule -->
+        <h2>Calculate the perimeter and area of a triangule</h2>
+        <form>
+            <label for="inputSide1">
+                Write the long of the first side of your triangule
+            </label>
+            <input type="number" id="inputSide1"/>
+            <label for="inputSide2">
+                Write the long of the second side of your triangule
+            </label>
+            <input type="number" id="inputSide2"/>
+            <label for="inputBase">
+                Write the long of the base of your triangule
+            </label>
+            <input type="number" id="inputBase"/>
+            <label for="inputHeight">
+                Write the long of the height of your triangule
+            </label>
+            <input type="number" id="inputHeight"/>
+            <button type="button" onclick="calculateTriangulePerimeter()">
+                Calculate the perimeter
+            </button>
+            <button type="button" onclick="calculateTrianguleArea()">
+                Calculate the area
+            </button>
+        </form>
+        <!-- Circle -->
+        <h2>Calculate the perimeter and area of a circle</h2>
+        <form>
+            <label for="inputCircle">
+                Write the long of the ratio of your circle
+            </label>
+            <input type="number" id="inputCircle"/>
+            <button type="button" onclick="calculateCirclePerimeter()">
+                Calculate the perimeter
+            </button>
+            <button type="button" onclick="calculateCircleArea()">
+                Calculate the area
+            </button>
+        </form>
+         <!-- Isosceles Triangule -->
+         <h2>Calculate the height of a isosceles triangule</h2>
+         <form>
+             <label for="inputIsosceles1">
+                 Write the long of the first side of your isosceles triangule
+             </label>
+             <input type="number" id="inputIsosceles1"/>
+             <label for="inputIsosceles2">
+                Write the long of the second side of your isosceles triangule
+            </label>
+            <input type="number" id="inputIsosceles2"/>
+            <label for="inputIsoscelesBase">
+                Write the long of the base of your isosceles triangule
+            </label>
+            <input type="number" id="inputIsoscelesBase"/>
+             <button type="button" onclick="calculateTrianguleIsoscelesHeight()">
+                 Calculate the height
+             </button>
+         </form>
+    </section>
+    <script src="./figures.js"></script>
+</body>
+</html>
